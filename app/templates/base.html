@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        {% if title %}
+        <title>{{ title }} - Doc01</title>
+        {% else %}
+        <title>Welcome to Doc01</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Doc01: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
